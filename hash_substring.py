@@ -1,14 +1,16 @@
 # python3
+
 def read_input():
     input_type = input().strip()
     if input_type == 'I':
         pattern = input().strip()
         text = input().strip()
     elif input_type == 'F':
-        with open('input.txt', 'r') as f:
+        with open('./tests/06', 'r') as f:
             pattern = f.readline().strip()
             text = f.readline().strip()
     return pattern, text
+
 
 
 def print_occurrences(output):
